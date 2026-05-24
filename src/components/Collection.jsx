@@ -96,7 +96,7 @@ export default function Collection() {
               }}
             >
               {t('collection_heading_1')}{' '}
-              <span style={{ color: 'var(--mint)', fontStyle: 'italic', fontWeight: 300 }}>
+              <span style={{ color: 'var(--mint)', fontFamily: '"Cookie", cursive' }}>
                 {t('collection_heading_italic')}
               </span>
               {t('collection_heading_end')}

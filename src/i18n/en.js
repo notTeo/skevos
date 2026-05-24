@@ -51,9 +51,9 @@ export default {
   contact_email_placeholder: 'you@somewhere',
   contact_message_placeholder: 'Tell us about the room, the piece, the dream…',
   contact_email_error: 'Please enter a valid email',
-  contact_btn_idle: 'Send enquiry ↘',
+  contact_btn_idle: 'Send enquiry',
   contact_btn_sending: 'Sending',
-  contact_btn_sent: "Thank you — we'll be in touch ✓",
+  contact_btn_sent: "Thank you — we'll be in touch",
   contact_reply: 'We reply within two working days',
 
   // Footer

@@ -4,7 +4,6 @@ export default function Footer() {
       style={{
         background: '#fff',
         borderTop: '1px solid rgba(27,24,21,0.08)',
-        overflow: 'hidden',
         paddingTop: 56,
       }}
     >
@@ -38,7 +37,7 @@ export default function Footer() {
         aria-hidden="true"
         style={{
           lineHeight: 0.82,
-          overflow: 'hidden',
+          overflow: 'visible',
           WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 85%)',
           maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 85%)',
         }}
@@ -46,7 +45,7 @@ export default function Footer() {
         <div
           className="brand"
           style={{
-            fontSize: 'min(14vw, 280px)',
+            fontSize: '20vw',
             color: 'rgba(27,24,21,0.18)',
             textAlign: 'center',
             whiteSpace: 'nowrap',

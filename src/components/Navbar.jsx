@@ -31,6 +31,7 @@ function LangToggle({ lang, setLang }) {
       borderRadius: 999,
       padding: 3,
       gap: 2,
+      width: 'fit-content',
     }}>
       {['en', 'gr'].map((l) => (
         <button

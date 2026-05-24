@@ -122,7 +122,7 @@ export default function Contact() {
             }}
           >
             {t('contact_heading_1')}{' '}
-            <span style={{ color: 'var(--mint)', fontStyle: 'italic', fontWeight: 300 }}>
+            <span style={{ color: 'var(--mint)', fontFamily: '"Cookie", cursive' }}>
               {t('contact_heading_italic')}
             </span>
             {t('contact_heading_end')}

@@ -51,9 +51,9 @@ export default {
   contact_email_placeholder: 'εσύ@κάπου',
   contact_message_placeholder: 'Πες μας για το δωμάτιο, το κομμάτι, το όνειρο…',
   contact_email_error: 'Παρακαλώ εισάγετε έγκυρο email',
-  contact_btn_idle: 'Αποστολή αιτήματος ↘',
+  contact_btn_idle: 'Αποστολή αιτήματος',
   contact_btn_sending: 'Αποστολή',
-  contact_btn_sent: 'Ευχαριστούμε — θα επικοινωνήσουμε ✓',
+  contact_btn_sent: 'Ευχαριστούμε — θα επικοινωνήσουμε',
   contact_reply: 'Απαντάμε εντός δύο εργάσιμων ημερών',
 
   // Footer
