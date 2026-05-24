@@ -5,6 +5,8 @@ export default function Footer() {
         background: '#fff',
         borderTop: '1px solid rgba(27,24,21,0.08)',
         paddingTop: 56,
+        paddingBottom: 0,
+        marginBottom: 0,
       }}
     >
       {/* Details row */}
@@ -32,12 +34,12 @@ export default function Footer() {
         <span>Elegant Marble Utensils</span>
       </div>
 
-      {/* Full-width SKEVOS wordmark fading out */}
+      {/* Full-width SKEVOS wordmark — snapped flush to bottom */}
       <div
         aria-hidden="true"
         style={{
-          lineHeight: 0.82,
-          overflow: 'visible',
+          lineHeight: 0.78,
+          overflow: 'hidden',
           WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 85%)',
           maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 85%)',
         }}
@@ -45,14 +47,14 @@ export default function Footer() {
         <div
           className="brand"
           style={{
-            fontSize: '20vw',
+            fontSize: '24vw',
+            letterSpacing: '-0.01em',
             color: 'rgba(27,24,21,0.18)',
             textAlign: 'center',
             whiteSpace: 'nowrap',
             userSelect: 'none',
             width: '100%',
             display: 'block',
-            letterSpacing: '0.1em',
           }}
         >
           SKEVOS

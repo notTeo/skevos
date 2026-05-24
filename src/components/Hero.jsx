@@ -94,7 +94,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.12, ease: 'easeOut' }}
               style={{
                 fontFamily: '"Cookie", cursive',
-                fontSize: isMobile ? 'clamp(56px, 14vw, 80px)' : 'clamp(40px, 9vw, 108px)',
+                fontSize: isMobile ? 'clamp(72px, 18vw, 100px)' : 'clamp(56px, 12vw, 140px)',
                 color: 'var(--mint)',
                 lineHeight: 1,
               }}
@@ -227,7 +227,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.9 }}
         style={{
           textAlign: 'center',
-          marginTop: 'clamp(10px, 2vw, 18px)',
+          marginTop: 'clamp(20px, 4vw, 36px)',
           fontFamily: '"Poppins", sans-serif',
           fontWeight: 600,
           fontSize: 9,
