@@ -1,0 +1,19 @@
+:root {
+  --eggshell:  #F7F3EE;
+  --bone:      #F2EBE0;
+  --paper:     #ECE3D3;
+  --cream:     #E4D8C2;
+  --ink:       #1B1815;
+  --ink-2:     #2A2622;
+  --stone:     #6F665C;
+  --mist:      #A89F92;
+  --mint:      #3f7e58;
+  --mint-2:    #589570;
+  --gold:      #B89465;
+  --r-lg:      38px;
+  --r-md:      24px;
+  --r-sm:      14px;
+  --shadow-lg: 0 40px 80px -30px rgba(27,24,21,0.35), 0 14px 28px -16px rgba(27,24,21,0.22);
+  --shadow-md: 0 24px 50px -22px rgba(27,24,21,0.28), 0 8px 18px -10px rgba(27,24,21,0.18);
+  --shadow-soft: 0 8px 24px -10px rgba(27,24,21,0.18);
+}

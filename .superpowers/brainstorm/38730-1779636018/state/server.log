@@ -1,0 +1,8 @@
+{"type":"server-started","port":56953,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:56953","screen_dir":"/Users/nicktheodosis/Code/websites /skevos/.superpowers/brainstorm/38730-1779636018/content","state_dir":"/Users/nicktheodosis/Code/websites /skevos/.superpowers/brainstorm/38730-1779636018/state"}
+{"type":"screen-added","file":"/Users/nicktheodosis/Code/websites /skevos/.superpowers/brainstorm/38730-1779636018/content/hero-options.html"}
+{"type":"screen-added","file":"/Users/nicktheodosis/Code/websites /skevos/.superpowers/brainstorm/38730-1779636018/content/hero-options-v2.html"}
+{"type":"screen-added","file":"/Users/nicktheodosis/Code/websites /skevos/.superpowers/brainstorm/38730-1779636018/content/hero-b-spacing.html"}
+{"source":"user-event","type":"click","text":"SkevosAtelier\n      Marble · Handcrafted\n    \n    \n      Wide — very open\n      Maximum breathing room. Luxury brand energy, almost monumental.","choice":"wide","id":null,"timestamp":1779636185875}
+{"source":"user-event","type":"click","text":"SkevosAtelier\n      Marble · Handcrafted\n    \n    \n      Wide — very open\n      Maximum breathing room. Luxury brand energy, almost monumental.","choice":"wide","id":null,"timestamp":1779636188845}
+{"source":"user-event","type":"click","text":"SkevosAtelier\n      Marble · Handcrafted\n    \n    \n      Wide — very open\n      Maximum breathing room. Luxury brand energy, almost monumental.","choice":"wide","id":null,"timestamp":1779636189270}
+{"type":"server-stopped","reason":"idle timeout"}

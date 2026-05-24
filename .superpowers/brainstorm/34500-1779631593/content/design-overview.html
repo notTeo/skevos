@@ -1,0 +1,157 @@
+<style>
+  body { background: #F2EBE0; font-family: 'Manrope', sans-serif; padding: 32px; }
+  .section { margin-bottom: 36px; }
+  h2 { font-family: Georgia, serif; font-size: 20px; color: #1B1815; margin-bottom: 6px; }
+  .sub { color: #6F665C; font-size: 13px; margin-bottom: 20px; }
+  .tree {
+    background: #1B1815;
+    color: #ECE3D3;
+    border-radius: 12px;
+    padding: 20px 24px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.9;
+  }
+  .tree .mint { color: #519071; font-weight: 700; }
+  .tree .dim { color: #6F665C; }
+  .color-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ECE3D3;
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1B1815;
+  }
+  .chip-dot { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; }
+  .chip.gone { text-decoration: line-through; opacity: 0.5; }
+  .chip.new { outline: 2px solid #519071; }
+  .stack-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .stack-chip {
+    background: #1B1815;
+    color: #ECE3D3;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .stack-chip.accent { background: #519071; }
+  .transition-item {
+    background: #ECE3D3;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #1B1815;
+  }
+  .t-icon { font-size: 18px; }
+  .nav-preview {
+    background: #1B1815;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo { color: #F2EBE0; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; }
+  .nav-links { display: flex; gap: 20px; }
+  .nav-link { color: #A89F92; font-size: 11px; }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
+  .lang-toggle { display: flex; background: #2A2622; border-radius: 20px; overflow: hidden; }
+  .lang-opt { padding: 4px 10px; font-size: 11px; font-weight: 600; cursor: pointer; }
+  .lang-opt.active { background: #519071; color: #fff; border-radius: 20px; }
+  .lang-opt.inactive { color: #6F665C; }
+  .nav-cta { background: #519071; color: #fff; border-radius: 20px; padding: 5px 14px; font-size: 11px; font-weight: 600; }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="section">
+  <h2>Project structure</h2>
+  <p class="sub">Vite + React 18 · proper component layout</p>
+  <div class="tree">
+src/<br>
+├── <span class="mint">components/</span><br>
+│   ├── Navbar.jsx <span class="dim">← GR/EN toggle lives here</span><br>
+│   ├── Hero.jsx<br>
+│   ├── Collection.jsx<br>
+│   ├── MarblePiece.jsx <span class="dim">← moved from marble.jsx</span><br>
+│   ├── About.jsx<br>
+│   ├── Contact.jsx<br>
+│   └── Footer.jsx<br>
+├── <span class="mint">context/</span><br>
+│   └── LanguageContext.jsx <span class="dim">← simple EN/GR switcher</span><br>
+├── <span class="mint">i18n/</span><br>
+│   ├── en.js <span class="dim">← all English strings</span><br>
+│   └── gr.js <span class="dim">← all Greek strings</span><br>
+├── <span class="mint">styles/</span><br>
+│   ├── variables.css <span class="dim">← design tokens incl. --mint</span><br>
+│   └── global.css<br>
+├── App.jsx<br>
+└── main.jsx
+  </div>
+</div>
+
+<div class="section">
+  <h2>Colour changes</h2>
+  <p class="sub">Warm neutrals stay · rust replaced by mint</p>
+  <div class="color-row">
+    <div class="chip gone"><div class="chip-dot" style="background:#8E3A1C"></div>--terra (removed)</div>
+    <div class="chip gone"><div class="chip-dot" style="background:#B85A37"></div>--terra-2 (removed)</div>
+    <div class="chip new"><div class="chip-dot" style="background:#519071"></div>--mint #519071 ✦ new</div>
+    <div class="chip new"><div class="chip-dot" style="background:#6BAF8E"></div>--mint-2 #6BAF8E ✦ new</div>
+  </div>
+  <div class="color-row">
+    <div class="chip"><div class="chip-dot" style="background:#F2EBE0"></div>--bone (kept)</div>
+    <div class="chip"><div class="chip-dot" style="background:#ECE3D3"></div>--paper (kept)</div>
+    <div class="chip"><div class="chip-dot" style="background:#E4D8C2"></div>--cream (kept)</div>
+    <div class="chip"><div class="chip-dot" style="background:#1B1815"></div>--ink (kept)</div>
+    <div class="chip"><div class="chip-dot" style="background:#B89465"></div>--gold (kept)</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Navbar preview</h2>
+  <p class="sub">GR / EN toggle shown in context</p>
+  <div class="nav-preview">
+    <div class="nav-logo">SKEVOS.</div>
+    <div class="nav-links">
+      <span class="nav-link">Collection</span>
+      <span class="nav-link">Atelier</span>
+      <span class="nav-link">Contact</span>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <span class="lang-opt active">GR</span>
+        <span class="lang-opt inactive">EN</span>
+      </div>
+      <div class="nav-cta">Commission</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Animations (all four)</h2>
+  <p class="sub">Powered by Framer Motion</p>
+  <div class="transition-item"><span class="t-icon">👁</span> <div><strong>Scroll fade-in</strong> — each section fades + slides up as it enters the viewport</div></div>
+  <div class="transition-item"><span class="t-icon">🌐</span> <div><strong>Language crossfade</strong> — swapping GR/EN fades the page content (0.3s opacity)</div></div>
+  <div class="transition-item"><span class="t-icon">🃏</span> <div><strong>Stagger reveals</strong> — collection cards animate in one-by-one with 60ms delay each</div></div>
+  <div class="transition-item"><span class="t-icon">🔗</span> <div><strong>Smooth scroll</strong> — nav links use CSS <code>scroll-behavior: smooth</code> + offset for fixed header</div></div>
+</div>
+
+<div class="section">
+  <h2>Stack</h2>
+  <div class="stack-row">
+    <div class="stack-chip">Vite 5</div>
+    <div class="stack-chip">React 18</div>
+    <div class="stack-chip accent">Framer Motion</div>
+    <div class="stack-chip">Custom i18n Context</div>
+    <div class="stack-chip">CSS Variables</div>
+  </div>
+</div>
