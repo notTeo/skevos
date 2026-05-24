@@ -235,7 +235,7 @@ export default function Navbar() {
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
-                  fontSize: 18,
+                  fontSize: 28,
                   color: 'var(--stone)',
                   padding: '4px 8px',
                   lineHeight: 1,
